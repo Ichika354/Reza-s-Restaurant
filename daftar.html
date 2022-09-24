@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+  </head>
+  <body>
+    <div class="col g-3 needs-validation d-flex flex-column justify-content-center align-items-center" style="height: 90vh" novalidate>
+      <nav class="navbar">
+        <div class="container-fluid">
+          <p class="navbar-brand text-center w-100">Register Now!!</p>
+        </div>
+      </nav>
+      <div class="col-md-4 position-relative">
+        <label for="registerInput" class="form-label">Username</label>
+        <div class="input-group has-validation">
+          <input type="text" class="form-control" id="registerInput" required />
+        </div>
+      </div>
+      <div class="col-md-4 position-relative">
+        <label for="passInput" class="form-label">Password</label>
+        <input type="password" class="form-control" id="passInput" required />
+      </div>
+      <div class="col-md-4 position-relative">
+        <label for="confirmInput" class="form-label">Confirm Password</label>
+        <input type="password" class="form-control" id="confirmInput" required />
+      </div>
+      <div class="d-grid gap-3 d-md-block mt-3">
+        <button class="btn btn-primary" type="button" onclick="onBackRegis()">Back</button>
+        <button class="btn btn-primary" type="button" onclick="onRegis()">Regis</button>
+      </div>
+    </div>
+    <script>
+      const registerInput = document.getElementById("registerInput");
+      const passInput = document.getElementById("passInput");
+      const confirmInput = document.getElementById("confirmInput");
+
+      function onRegis() {
+        localStorage.setItem("username", registerInput.value)
+        localStorage.setItem("password", passInput.value)
+
+        if (registerInput.value !== "" && passInput.value.length == 5 && confirmInput.value.length == 5 ) {
+            alert("Akun baru berhasil terbuat")
+            window.location.href = "login.html";
+        } else if (registerInput.value == "") {
+            alert("isi dongg")
+        } else if (passInput.value == "" && confirmInput.value == "") {
+            alert("Masa iyaa ga diisi kan aneh")
+        } 
+        else if (passInput.value.length < 5 && confirmInput.value.length < 5) {
+            alert("Password minimal 5 karakterr yaa jangan kurang")
+        } else {
+            alert("Isi yang bener dong masa salahh")
+        }   
+      }
+      function onBackRegis() {
+        console.log("apaap");
+        window.location.href = "login.html";
+      }
+    </script>
+  </body>
+</html>

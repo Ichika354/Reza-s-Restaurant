@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-3">Reza's Restaurant</a>
+          <div class="d-flex gap-3" role="search">
+            <button class="btn btn-outline-dark" type="submit" onclick="onLogout()">Logout</button>
+            <button class="btn btn-outline-dark" type="submit" onclick="onDelete()">Delete Acount</button>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Navbar end -->
+
+    <!-- content -->
+    <section class="jumbotron text-center" id="home">
+        <img src="assets/images/fotogua.jpeg" alt="" class="rounded-circle img-thumbnail" />
+        <h1 class="display-4" id="nama"></h1>
+        <p class="lead">If you want to buy some food or drink you can buy my recommandation</p>
+      </section>
+
+    <div class="row d-flex justify-content-center align-items-end w-100 mt-3 gap-4">
+      <div class="card" style="width: 18rem">
+        <img src="assets/images/Screenshot (146).png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Pempek Nando</h5>
+          <p class="card-text">If you want buy some Pempek, You can in here. Click the button</p>
+          <button class="btn btn-primary" onclick="onPempek()">See Store</button>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="assets/images/Screenshot (147).png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Nasi Goreng</h5>
+          <p class="card-text">If you want buy "Nasi Goreng", You can in here. Click the button</p>
+          <button class="btn btn-primary" onclick="onNasiGoreng()">See Store</button>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="assets/images/Screenshot (148).png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Martabak</h5>
+          <p class="card-text">If you want buy "Martabak", You can in here. Click the button</p>
+          <button class="btn btn-primary" onclick="onMartabak()">See Store</button>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="assets/images/Screenshot (149).png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Sushi</h5>
+          <p class="card-text">If you want buy "Sushi", You can in here. Click the button</p>
+          <button class="btn btn-primary" onclick="onSushi()">See Store</button>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="assets/images/Screenshot (150).png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Thai tea</h5>
+          <p class="card-text">If you want buy Thaitea, You can in here. Click the button</p>
+          <button class="btn btn-primary" onclick="onThaiTea()">See Store</button>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="assets/images/Screenshot (151).png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Kebab</h5>
+          <p class="card-text">If you want buy "Kebab", You can in here. Click the button</p>
+          <button class="btn btn-primary" onclick="onKebab()">See Store</button>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="assets/images/Screenshot (152).png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Aneka Makanan Berat</h5>
+          <p class="card-text">If you want buy "Makanan", You can in here. Click the button.</p>
+          <button class="btn btn-primary" onclick="onMakanan()">See Store</button>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="assets/images/Screenshot (153).png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Aneka Makanan Barat</h5>
+          <p class="card-text">If you want buy steak, You can in here. Click the button.</p>
+          <button class="btn btn-primary" onclick="onSteak()">See Store</button>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <p class="navbar-brand text-center w-100">©Copyright 2022</p>
+    </nav>
+    <!-- content -->
+    <script>
+        const nama = document.getElementById("nama");
+        nama.textContent = "Hallooo" + " " + localStorage.getItem("username")
+
+      function onPempek() {
+        window.location.href = "https://gofood.co.id/bandung/restaurant/pempek-nando-batujajar-957579bc-511b-40f7-89bc-b7b592fe86bf";
+      }
+
+      function onNasiGoreng() {
+        window.location.href = "https://gofood.co.id/bandung/restaurant/nasgor-pacitan-spesial-mas-radi-batujajar-raya-78c9f4cc-83ff-4fb6-b09c-d495269f130e";
+      }
+      function onMartabak() {
+        window.location.href = "https://gofood.co.id/bandung/restaurant/martabak-legit-group-batujajar-d949f0ca-4da9-4dc2-823b-e0390504e840?locale=en";
+      }
+      function onSushi() {
+        window.location.href = "https://gofood.co.id/bandung/restaurant/osaka-sushi-batujajar-b0896746-4369-4ad9-8bf4-1ad8abe1f78a";
+      }
+      function onThaiTea() {
+        window.location.href = "https://gofood.co.id/bandung/restaurant/chan-thai-tea-batujajar-d07d1e02-be5f-43bb-84bd-909d5b820701";
+      }
+      function onKebab() {
+        window.location.href = "https://gofood.co.id/bandung/restaurant/kebab-asap-batujajar-e424a9e0-fc9b-4c59-bdbc-3ab93f34a31e";
+      }
+      function onMakanan() {
+        window.location.href = "https://gofood.co.id/bandung/restaurant/kedai-buna-batujajar-c867383d-5e66-4405-99f0-18827d5428ee";
+      }
+      function onSteak() {
+        window.location.href = "https://gofood.co.id/bandung/restaurant/outcamp-kitchen-sarijadi-dced6c58-c4f3-4560-ae09-6fe8b47f02f1";
+      }
+
+      function onLogout() {
+        window.location.href = "login.html";
+      }
+
+      function onDelete() {
+        const i = confirm("Beneran nih akunya mau dihapus?");
+        switch (i) {
+            case true:
+                alert("Oke deh kalau mau hapus akun");
+                alert("Bye bye ");
+                window.location.href = "login.html";
+                localStorage.clear();
+                break;
+        
+            default:
+                alert("Kirain beneran mau di hapuss")
+                break;
+        }
+      }
+    </script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
