@@ -6,32 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
   </head>
   <body>
     <!-- Navbar -->
 
     <nav class="navbar bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand ms-3">Reza's Restaurant</a>
-          <div class="d-flex gap-3" role="search">
-            <button class="btn btn-outline-dark" type="submit" onclick="onLogout()">Logout</button>
-            <button class="btn btn-outline-dark" type="submit" onclick="onDelete()">Delete Acount</button>
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand ms-3">Reza's Restaurant</a>
+        <div class="d-flex gap-3" role="search">
+          <button class="btn btn-outline-dark" type="submit" onclick="onLogout()">Logout</button>
+          <button class="btn btn-outline-dark" type="submit" onclick="onDelete()">Delete Acount</button>
         </div>
-      </nav>
+      </div>
+    </nav>
 
     <!-- Navbar end -->
 
     <!-- content -->
     <section class="jumbotron text-center" id="home">
-        <img src="assets/images/fotogua.jpeg" alt="" class="rounded-circle img-thumbnail" />
-        <h1 class="display-4" id="nama"></h1>
-        <p class="lead">If you want to buy some food or drink you can buy my recommandation</p>
-      </section>
+      <img src="assets/images/fotogua.jpeg" alt="" class="rounded-circle img-thumbnail" />
+      <h1 class="display-4" id="nama"></h1>
+      <p class="lead">If you want to buy some food or drink you can buy my recommandation</p>
+    </section>
 
-    <div class="row d-flex justify-content-center align-items-end w-100 mt-3 gap-4">
-      <div class="card" style="width: 18rem">
+    <div class="row d-flex justify-content-center align-items-center w-100 mt-3 gap-4">
+      <div class="card col-sm-6" style="width: 18rem">
         <img src="assets/images/Screenshot (146).png" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Pempek Nando</h5>
@@ -39,7 +46,7 @@
           <button class="btn btn-primary" onclick="onPempek()">See Store</button>
         </div>
       </div>
-      <div class="card" style="width: 18rem">
+      <div class="card col-sm-6" style="width: 18rem">
         <img src="assets/images/Screenshot (147).png" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Nasi Goreng</h5>
@@ -47,7 +54,7 @@
           <button class="btn btn-primary" onclick="onNasiGoreng()">See Store</button>
         </div>
       </div>
-      <div class="card" style="width: 18rem">
+      <div class="card col-sm-6" style="width: 18rem">
         <img src="assets/images/Screenshot (148).png" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Martabak</h5>
@@ -55,7 +62,7 @@
           <button class="btn btn-primary" onclick="onMartabak()">See Store</button>
         </div>
       </div>
-      <div class="card" style="width: 18rem">
+      <div class="card col-sm-6" style="width: 18rem">
         <img src="assets/images/Screenshot (149).png" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Sushi</h5>
@@ -63,7 +70,7 @@
           <button class="btn btn-primary" onclick="onSushi()">See Store</button>
         </div>
       </div>
-      <div class="card" style="width: 18rem">
+      <div class="card col-sm-6" style="width: 18rem">
         <img src="assets/images/Screenshot (150).png" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Thai tea</h5>
@@ -71,7 +78,7 @@
           <button class="btn btn-primary" onclick="onThaiTea()">See Store</button>
         </div>
       </div>
-      <div class="card" style="width: 18rem">
+      <div class="card col-sm-6" style="width: 18rem">
         <img src="assets/images/Screenshot (151).png" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Kebab</h5>
@@ -79,7 +86,7 @@
           <button class="btn btn-primary" onclick="onKebab()">See Store</button>
         </div>
       </div>
-      <div class="card" style="width: 18rem">
+      <div class="card col-sm-6" style="width: 18rem">
         <img src="assets/images/Screenshot (152).png" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Aneka Makanan Berat</h5>
@@ -87,7 +94,7 @@
           <button class="btn btn-primary" onclick="onMakanan()">See Store</button>
         </div>
       </div>
-      <div class="card" style="width: 18rem">
+      <div class="card col-sm-6" style="width: 18rem">
         <img src="assets/images/Screenshot (153).png" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Aneka Makanan Barat</h5>
@@ -96,14 +103,95 @@
         </div>
       </div>
     </div>
+    <div class="jumbotron text-center" id="bot">
+      <h1 class="display-4">Place</h1>
+      <p class="lead">If you want to visit tourist attractions or lodgings in Bandung, you can see the places I recommend</p>
+    </div>
+    <div class="row d-flex justify-content-center align-items-end w-100 mt-3 gap-4">
+      <div class="card col-sm-6" style="width: 18rem">
+        <img src="assets/images/Screenshot (155).png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Booking Hotel</h5>
+          <p class="card-text">If you want booking the hotel, You can in here. Click the button</p>
+          <button class="btn btn-primary" onclick="onHotel()">Booking Now</button>
+        </div>
+      </div>
+      <div class="card col-sm-6" style="width: 18rem">
+        <img src="assets/images/Screenshot (156).png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Booking Apartement</h5>
+          <p class="card-text">If you want the Apartement, You can in here. Click the button</p>
+          <button class="btn btn-primary" onclick="onApart()">Booking Now</button>
+        </div>
+      </div>
+      <div class="card col-sm-6" style="width: 18rem">
+        <img src="assets/images/Screenshot (157).png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Penginapan</h5>
+          <p class="card-text">if you want cheap lodging, You can in here. Click the button</p>
+          <button class="btn btn-primary" onclick="onMurah()">Booking <Nav></Nav></button>
+        </div>
+      </div>
+      <div class="card col-sm-6" style="width: 18rem">
+        <img src="assets/images/Screenshot (158).png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Trans Studio Bandung</h5>
+          <p class="card-text">If you want go to here , Click the button</p>
+          <button class="btn btn-primary" onclick="onTransStudio()">See More</button>
+        </div>
+      </div>
+      <div class="card col-sm-6" style="width: 18rem">
+        <img src="assets/images/Screenshot (159).png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Tangkuban Parahu</h5>
+          <p class="card-text">If you want go to here. Click the button</p>
+          <button class="btn btn-primary" onclick="onTangkuban()">See More</button>
+        </div>
+      </div>
+      <div class="card col-sm-6" style="width: 18rem">
+        <img src="assets/images/Screenshot (160).png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Dago Dream Park</h5>
+          <p class="card-text">If you want go to here. Click the button</p>
+          <button class="btn btn-primary" onclick="onDago()">See More</button>
+        </div>
+      </div>
+      <div class="card col-sm-6" style="width: 18rem">
+        <img src="assets/images/lembang.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Farm House lembang</h5>
+          <p class="card-text">If you want go to here. Click the button</p>
+          <button class="btn btn-primary" onclick="onLembang()">See More</button>
+        </div>
+      </div>
+      <div class="card col-sm-6" style="width: 18rem">
+        <img src="assets/images/braga.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Braga Bandung</h5>
+          <p class="card-text">If you want go to here. Click the button.</p>
+          <button class="btn btn-primary" onclick="onBraga()">See More</button>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex flex-column justify-content-center align-items-center w-100">
+      <p class="lead">Donate via Dana</p>
+      <img src="assets/images/QR Dana.jpg" class="w-25" alt="">
+    </div>
     <nav class="navbar">
+      <div class="link d-flex justify-content-center align-items-center w-100 gap-3">
+        <a href="https://www.instagram.com/fchrz.0/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UClcN3-E_J7CSlzv-vAeHayQ/featured"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.facebook.com/Muh.Facfarhan"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.tiktok.com/@ichikachan33"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
       <div class="container-fluid">
-        <p class="navbar-brand text-center w-100">©Copyright 2022</p>
+        <p class="navbar-brand text-center w-100">©Copyright 2022(Ichika)</p>
+      </div>
     </nav>
     <!-- content -->
     <script>
-        const nama = document.getElementById("nama");
-        nama.textContent = "Hallooo" + " " + localStorage.getItem("username")
+      const nama = document.getElementById("nama");
+      nama.textContent = "Hallooo" + " " + localStorage.getItem("username");
 
       function onPempek() {
         window.location.href = "https://gofood.co.id/bandung/restaurant/pempek-nando-batujajar-957579bc-511b-40f7-89bc-b7b592fe86bf";
@@ -130,24 +218,54 @@
       function onSteak() {
         window.location.href = "https://gofood.co.id/bandung/restaurant/outcamp-kitchen-sarijadi-dced6c58-c4f3-4560-ae09-6fe8b47f02f1";
       }
+      function onHotel() {
+        window.location.href = "https://www.booking.com/searchresults.html?aid=339463&label=msn-PnnLVoFG1HME4eg0WtV%2AJQ-16811440604%3Atikwd-16530088235%3Aloc-91%3Aneo%3Amte%3Alp150267%3Adec%3Aqstrans%20studio%20bandung&sid=d0075d9c7b0985f69420b992bfaae491&city=-2671576&expand_sb=1&highlighted_hotels=406927&hlrd=no_dates&keep_landing=1&redirected=1&source=hotel&msclkid=439c4f139a1e16b3ecf42c3c5968e128&utm_campaign=Hotel%20-%20Indonesia&utm_medium=cpc&utm_source=bing&utm_term=PnnLVoFG1HME4eg0WtV%2AJQ&room1=A,A,;";
+      }
+      function onApart() {
+        window.location.href = "https://www.booking.com/apartments/city/id/bandung.html?aid=803914&label=msn-2t5WLKd2FHSE5knj1DdD5A-16819729375%3Atikwd-80127056667051%3Aloc-91%3Aneo%3Amte%3Alp150267%3Adec%3Aqsapartemen%20bandung&sid=d0075d9c7b0985f69420b992bfaae491&keep_landing=1&msclkid=6523dca9b19e1dc6fb8abf867526155a&utm_campaign=Apartments%20-%20Indonesia&utm_medium=cpc&utm_source=bing&utm_term=2t5WLKd2FHSE5knj1DdD5A&";
+      }
+      function onMurah() {
+        window.location.href = "https://www.agoda.com/id-id/pages/agoda/default/DestinationSearchResult.aspx?city=18943&site_id=1744579&tag=93334310-3e07-4c93-2c20-010a7fe82d5f&msclkid=2b496e4d16121dd4a49c0d62d0181fc4&utm_source=bing&utm_medium=cpc&utm_campaign=Intent%20Engine%20-%20238&utm_term=penginapan%20murah%20bandung&utm_content=penginapan%20murah%20bandung%7Cci%3Abandung_18943&sort=priceLowToHigh";
+      }
+      function onTransStudio() {
+        window.location.href = "https://www.transstudiobandung.com/";
+      }
+      function onDago() {
+        window.location.href = "https://dagodreampark.co.id/";
+      }
+      function onLembang() {
+        window.location.href = "https://www.idntimes.com/travel/destination/naufal-al-rahman-1/informasi-rute-lokasi-dan-harga-tiket-di-farmhouse-lembang-bandung";
+      }
+      function onBraga() {
+        window.location.href = "https://tourbandung.id/jalan-braga-bandung/";
+      }
 
       function onLogout() {
-        window.location.href = "login.html";
+        const y = confirm("Yakin mau keluarr?");
+        switch (y) {
+          case true:
+            window.location.href = "index.html";
+            break;
+
+          default:
+            alert("Kirain mau keluar liat liat dulu atuh");
+            break;
+        }
       }
 
       function onDelete() {
         const i = confirm("Beneran nih akunya mau dihapus?");
         switch (i) {
-            case true:
-                alert("Oke deh kalau mau hapus akun");
-                alert("Bye bye ");
-                window.location.href = "index.html";
-                localStorage.clear();
-                break;
-        
-            default:
-                alert("Kirain beneran mau di hapuss")
-                break;
+          case true:
+            alert("Oke deh kalau mau hapus akun");
+            alert("Bye bye ");
+            window.location.href = "index.html";
+            localStorage.clear();
+            break;
+
+          default:
+            alert("Kirain beneran mau di hapuss");
+            break;
         }
       }
     </script>
