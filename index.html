@@ -80,6 +80,8 @@
             localStorage.getItem("username", usernameInput.value);
             localStorage.getItem("password", passwordInput.value);
             window.location.href = "isi.html";
+          } else if(usernameInput.value == "" || passwordInput.value == "") {
+            alert("Di isi atuh masa iya ga di isi  kan aneh")
           } else {
             alert("Ada yang salah tuh atau belum bikin akun?")
           }
