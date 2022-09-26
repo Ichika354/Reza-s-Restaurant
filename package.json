@@ -1,0 +1,25 @@
+{
+  "name": "login-statement",
+  "version": "1.0.0",
+  "description": "Login untuk mendapatkan rekomendasi makanan dan tmpat\u001b[D\u001b[D\u001b[D\u001b[De\u001b[C\u001b[C\u001b[C\u001b[D\u001b[D\u001b[Dm\u001b[C\u001b[C\u001b[C\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[Cmpat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ichika354/Reza-s-Restaurant.git"
+  },
+  "keywords": [
+    "asdsadsasd"
+  ],
+  "author": "Reza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ichika354/Reza-s-Restaurant/issues"
+  },
+  "homepage": "https://github.com/Ichika354/Reza-s-Restaurant#readme",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
